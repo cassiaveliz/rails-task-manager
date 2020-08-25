@@ -2,5 +2,7 @@
 <p class="alert alert-primary"><%=@task.details%></p>
 <p><%= @task.completed == false ? '🟦 This task is not completed yet' : '☑️ This task is completed'%></p>
 
-
-<%= link_to '↶ Back to list', tasks_path, class: 'tasks' %>
+<div class="footer">
+    <%= link_to '✎ Update task', edit_path %><br>
+    <%= link_to '↩️ Back to list', tasks_path, class: 'tasks' %>
+</div>

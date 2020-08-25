@@ -3,5 +3,21 @@
 
 body {
     background-color: #F7F7F7;
+    color: darkgray;
     margin: 50px;
+}
+
+.footer {
+    border-top: 1px solid darkgray;
+    padding-top:  20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkgray;
 }
