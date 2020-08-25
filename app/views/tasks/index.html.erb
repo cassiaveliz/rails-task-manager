@@ -1,0 +1,8 @@
+<h1>My Tasks</h1><br>
+<% @tasks.each do |task| %>
+  <%= task.completed == false ? '🟦' : '☑️' %>
+  <span><%= link_to task.title, task_path(task) %></span>
+  <span><%= link_to '🗑️', task_path(task.id), method: :delete, data: {confirm: 'Are you sure?'} %><br>
+<% end %>
+<br>
+<%= link_to '✚ Add a new taks', tasks_new_path %>
